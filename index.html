@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2048 by alcarden</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="game-container">
+		<!-- <div class="instructions">
+            <p class="instructions-text">COMO JUGAR: Junta numeros iguales y se suman.</p>
+    	</div> -->
+		<div class="title-container" id="title">
+			<h1>2048</h1>
+			<div class="last-move" id="last-move">
+				<p>Last Move: </p>
+
+			</div>
+		</div>
+		<div class="score-container">
+			<span>Score: <span id="score">0</span></span>
+			<span>Best Score: <span id="best-score">0</span></span>
+			<img src="./svg/reload.svg" id="restart-btn" alt="Restart" class="restart-icon">
+		</div>
+		<div class="grid-container">
+			<!-- The grid will be filled by JavaScript -->
+		</div>
+		<div id="win-modal" class="mobile-modal">
+			<div class="modal-content">
+				<h2>¡Has ganado!</h2>
+				<p>¡Felicidades! Has conseguido el 2048</p>
+				<p>Puntuación: <span id="win-score">0</span></p>
+				<button class="gameover-button" id="continue-game">Seguir jugando</button>
+			</div>
+		</div>
+		<div id="gameover-modal" class="mobile-modal">
+			<div class="modal-content">
+				<h2>¡Game Over!</h2>
+				<p>Tu puntuación final es: <span id="final-score">0</span></p>
+				<button class="gameover-button" id="close-gameover">Jugar de nuevo</button>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+<footer>
+	<img src="./svg/mobile.svg" id="mobile-instructions" alt="mobile" class="mobile-instructions">
+	<!-- Añadir después del grid-container y antes del script -->
+	<div id="mobile-modal" class="mobile-modal">
+		<div class="modal-content">
+			<h2>Instrucciones para móvil</h2>
+			<p>Desliza el dedo sobre la pantalla en cualquier dirección:</p>
+			<ul>
+				<li>👆 Desliza hacia arriba para mover arriba</li>
+				<li>👇 Desliza hacia abajo para mover abajo</li>
+				<li>👈 Desliza hacia la izquierda para mover izquierda</li>
+				<li>👉 Desliza hacia la derecha para mover derecha</li>
+			</ul>
+			<button id="close-modal">Entendido</button>
+		</div>
+	</div>
+	<p style="text-align: center; color: black; font: italic bold 15px Arial;">By alcarden <br> 42Málaga</p>
+</footer>
+
+</html>
