@@ -346,8 +346,9 @@ footer p {
 }
 
 /* CSS del pop-up con las instrucciones */
+/* CSS del pop-up con las instrucciones */
 .mobile-modal {
-    display: none;
+    display: none; /* Mantener solo este display */
     position: fixed;
     top: 0;
     left: 0;
@@ -357,11 +358,18 @@ footer p {
     z-index: 1000;
 }
 
+/* Añadir una clase separada para cuando el modal esté activo */
+.mobile-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .modal-content {
     position: relative;
     text-align: center;
     background-color: #faf8ef;
-    margin: 15% auto;
+    margin: 0 auto;
     padding: 20px;
     width: 80%;
     max-width: 500px;
