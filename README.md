@@ -6,6 +6,7 @@ docker build -t 2048-game .
 
 docker run -d -p 8080:8080 --name 2048 2048-game
 
+http://localhost:8080/
 
 Estos comandos:
 1. Construyen una imagen Docker usando el Dockerfile del proyecto
